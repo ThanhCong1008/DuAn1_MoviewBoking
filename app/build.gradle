@@ -6,6 +6,10 @@ android {
     namespace 'com.example.duan1_moviewwbooking'
     compileSdk 34
 
+    packagingOptions {
+        exclude 'META-INF/some_duplicate_file'
+    }
+
     defaultConfig {
         applicationId "com.example.duan1_moviewwbooking"
         minSdk 28
@@ -14,6 +18,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    configurations {
+        all*.exclude group: 'com.somegroup', module: 'somemodule'
     }
 
     buildTypes {
