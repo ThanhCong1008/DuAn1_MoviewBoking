@@ -231,6 +231,7 @@ public class DbHelper extends SQLiteOpenHelper {
         String dropTableVePhim = "drop table if exists vephim";
         db.execSQL(dropTableVePhim);
         onCreate(db);
+//datcmt
 
     }
 }
