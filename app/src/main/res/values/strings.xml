@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">duAn1_MovieTicketBooking</string>
     <string name="search_phim_hint">Search for a movie</string>
     <string name="error_ten_phim">Please enter the movie name</string>
@@ -11,5 +12,6 @@
     <string name="error_do_tuoi_number">Age rating must be a number</string>
     <string name="error_ngay_phat_hanh">Please enter the release date</string>
     <string name="add_phim_success">Movie added successfully</string>
+
 
 </resources>
