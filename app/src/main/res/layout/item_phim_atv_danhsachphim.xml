@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/background"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_anhdaidien_atv_danhsachphim"
+        android:layout_width="120dp"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:src="@drawable/phim1"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tenphim_atv_danhsachphim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên phim"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:maxLines="2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_dotuoi_atv_danhsachphim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P-G 13 +"
+            android:textSize="18sp"
+            android:textColor="#AAAAAA"/>
+        <TextView
+            android:id="@+id/tv_thoiluong_atv_danhsachphim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120 min"
+            android:textSize="18sp"
+            android:textColor="#AAAAAA"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_datve_atv_danhsachphim"
+                android:layout_width="100dp"
+                android:text="Đặt vé"
+                android:textColor="@color/white"
+                android:background="@drawable/border_btn_datve"
+                android:layout_height="35dp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_delete_phim"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_remove"/>
+</LinearLayout>

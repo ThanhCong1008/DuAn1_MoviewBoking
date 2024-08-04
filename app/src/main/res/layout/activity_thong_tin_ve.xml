@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ThongTinVeActivity">
+    <LinearLayout
+        android:id="@+id/lnl_header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#2F2C44"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_back_atv_thongtinve"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_back"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Thông tin vé"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnl_chitiet_ngay_gio"
+        app:layout_constraintTop_toBottomOf="@id/lnl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suất chiếu"
+            android:textSize="18sp"
+            android:textColor="#9F9F9F"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_ngaychieu_atv_thongtinve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/12/2023"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_giochieu_atv_thongtinve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - 17:10"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rạp chiếu"
+            android:textSize="18sp"
+            android:textColor="#9F9F9F"/>
+        <TextView
+            android:id="@+id/tv_tenrap_atv_thongtinve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGV VINCOM PLAZA"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_line"
+        app:layout_constraintTop_toBottomOf="@id/lnl_chitiet_ngay_gio"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#818181"/>
+    <LinearLayout
+        android:id="@+id/lnl_chitiet_nguoidung"
+        app:layout_constraintTop_toBottomOf="@id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người đặt"
+            android:textSize="18sp"
+            android:textColor="#9F9F9F"/>
+        <TextView
+            android:id="@+id/tv_nguoidat_atv_thongtinve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Văn A"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã vé"
+            android:textSize="18sp"
+            android:textColor="#9F9F9F"/>
+        <TextView
+            android:id="@+id/tv_mave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12345"
+            android:textStyle="bold"
+            android:textColor="@color/dangChon"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/icon_qr"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quét mã QR để soát vé"
+            android:textSize="18sp"
+            android:textColor="#9F9F9F"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnl_tonggia"
+        app:layout_constraintTop_toBottomOf="@id/lnl_chitiet_nguoidung"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#68372A4E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng: "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_tonggia_atv_thongtinve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50.000 VND"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
