@@ -10,6 +10,7 @@ import com.example.duan1_moviewwbooking.databinding.ActivityMainBinding;
 import com.example.duan1_moviewwbooking.fragment.TaiKhoanFragment;
 import com.example.duan1_moviewwbooking.fragment.TrangChuFragment;
 import com.example.duan1_moviewwbooking.fragment.VePhimFragment;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+android:orientation="vertical"
+tools:context=".fragment.TrangChuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/background"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context=".fragment.TrangChuFragment">
+
+        <LinearLayout
+            android:id="@+id/lnl_header"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/img_iconuser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_person_tim"/>
+            <TextView
+                android:id="@+id/tv_xinchao_user"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bell" />
+
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/banner"
+            app:layout_constraintTop_toBottomOf="@id/lnl_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/lnl_danhsachphim"
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh sách phim"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_xemthem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem thêm >"
+                android:textColor="#D1D1D1"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_phim"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/lnl_danhsachphim"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/lnl_footer"
+            app:layout_constraintTop_toBottomOf="@id/rcv_phim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_gioithieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:background="@drawable/border_btnfooter"
+                android:text="Giới Thiệu"/>
+            <Button
+                android:id="@+id/btn_tienichonline"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:background="@drawable/border_btnfooter"
+                android:text="Tiện Ích Online"/>
+            <Button
+                android:id="@+id/btn_thequatang"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:background="@drawable/border_btnfooter"
+                android:text="Thẻ Quà Tặng"/>
+            <Button
+                android:id="@+id/btn_tiendung"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:background="@drawable/border_btnfooter"
+                android:text="Tiện Dụng"/>
+            <Button
+                android:id="@+id/btn_lienhequangcao"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:background="@drawable/border_btnfooter"
+                android:text="Liên Hệ Quảng Cáo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnl_lienhe"
+            app:layout_constraintTop_toBottomOf="@id/lnl_footer"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_facebook"/>
+            <ImageView
+                android:id="@+id/btn_youtube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_youtube"/>
+            <ImageView
+                android:id="@+id/btn_instagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_instagram"/>
+            <ImageView
+                android:id="@+id/btn_zalo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_zalo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnl_chamsockhachhang"
+            app:layout_constraintTop_toBottomOf="@id/lnl_lienhe"
+            android:layout_marginTop="15dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1F172E"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHĂM SÓC KHÁCH"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotline: 1900 6017"
+                android:textColor="@color/white"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email hỗ trợ: hoidap@cgv.vn"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/lnl_chamsockhachhang"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo_cgv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="CÔNG TY TNHH CJ CGV VIỆT NAM"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393
+đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế
+hoạch và Đầu tư Thành phố Hồ Chí Minh
+Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14,
+Quận 10, Thành phố Hồ Chí Minh, Việt Nam
+Đường dây nóng (Hotline): 1900 6017
+COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD ALL
+RIGHTS RESERVED"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
