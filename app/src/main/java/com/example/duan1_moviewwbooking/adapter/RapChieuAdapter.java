@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.duan1_movieticketbooking.R;
+import com.example.duan1_moviewwbooking.R;
 import com.example.duan1_movieticketbooking.dao.XuatChieuDao;
 import com.example.duan1_movieticketbooking.model.RapChieu;
 import com.example.duan1_movieticketbooking.model.XuatChieu;
