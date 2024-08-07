@@ -35,8 +35,21 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="false">
-
         </activity>
+        <activity
+            android:name=".activity.PhimActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.DanhSachPhimActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.QuanLyNguoiDungActivity"
+            android:exported="false">
+        </activity>
+
+
     </application>
 
 </manifest>
