@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/item_rapchieu">
+
+    <LinearLayout
+        android:id="@+id/lnl_itemrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:background="@drawable/border_imgrap"
+            android:layout_weight="1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_cgv" />
+
+        <TextView
+            android:layout_weight="15"
+            android:id="@+id/tv_tenrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên rạp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/img_dropdow_rapchieu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_down"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/lnl_xuatchieu"
+        android:layout_below="@id/lnl_itemrap"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:padding="16dp"
+        android:background="@drawable/border_poster"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#7C7C7C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá vé: "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_giave"
+                android:textColor="#BFBFBF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rcv_xuatchieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
