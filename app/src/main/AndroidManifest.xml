@@ -16,16 +16,17 @@
         android:theme="@style/Theme.DuAn1_MoviewwBooking"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ThongTinVeActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.WelcomeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".activity.DangNhapActivity"
             android:exported="false" />
@@ -34,22 +35,16 @@
             android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activity.PhimActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activity.DanhSachPhimActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activity.QuanLyNguoiDungActivity"
-            android:exported="false">
-        </activity>
-
-
+            android:exported="false"></activity>
     </application>
 
 </manifest>
