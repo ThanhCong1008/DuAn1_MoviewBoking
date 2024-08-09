@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thêm phim"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:background="@color/dangChon"
+        android:textColor="@color/white"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_tenphim"
+        app:endIconMode="clear_text"
+        android:hint="Tên phim"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_tenphim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_mota"
+        app:endIconMode="clear_text"
+        android:hint="Mô tả"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_mota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_thoiluong"
+        app:endIconMode="clear_text"
+        android:hint="Thời lượng"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_thoiluong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_anhdaidien"
+        app:endIconMode="clear_text"
+        android:hint="Ảnh đại diện"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_anhdaidien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_trailer"
+        app:endIconMode="clear_text"
+        android:hint="Trailer phim"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_dotuoi"
+        app:endIconMode="clear_text"
+        android:hint="Độ tuổi xem"
+        app:hintTextColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon"
+        app:boxStrokeColor = "@color/daDat"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_dotuoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_ngayphathanh"
+        app:errorEnabled="true"
+        android:hint="Ngày phát hành"
+        app:endIconMode="custom"
+        app:endIconTint = "@color/daDat"
+        app:endIconDrawable = "@drawable/icon_calendar"
+        app:hintTextColor = "@color/dangChon"
+        app:boxStrokeColor = "@color/dangChon"
+        android:textColorHint = "@color/dangChon">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_ngayphathanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/daDat"
+            app:backgroundTint="#c4c4c4"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/btn_dialog_cancle_add_phim"
+            android:text="Huỷ"/>
+
+        <Button
+            android:id="@+id/btn_dialog_add_phim"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Thêm"
+            android:backgroundTint="@color/dangChon"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

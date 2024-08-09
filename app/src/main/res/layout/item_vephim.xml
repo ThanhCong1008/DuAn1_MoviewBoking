@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_ve"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/lnl_vephim">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_cgv"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_mave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten phim"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_ngaychieu_atv_ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/10/2022"
+            android:textColor="#AEAEAE"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tonggia_atv_quanlyve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AEAEAE"
+        android:layout_marginRight="15dp"/>
+    <ImageView
+        android:id="@+id/img_delete_ve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_remove"/>
+
+</LinearLayout>
