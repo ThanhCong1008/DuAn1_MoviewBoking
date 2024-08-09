@@ -94,7 +94,7 @@ public class PhimActivity extends AppCompatActivity {
                     // Hiển thị thông báo "Vui lòng đăng nhập"
                     Toast.makeText(PhimActivity.this, "Vui lòng đăng nhập", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(PhimActivity.this, com.example.duan1_movieticketbooking.activity.RapChieuActivity.class);
+                    Intent intent = new Intent(PhimActivity.this, com.example.duan1_moviewwbooking.activity.RapChieuActivity.class);
                     intent.putExtra("phim_id", phim.getId());
                     startActivity(intent);
                 }

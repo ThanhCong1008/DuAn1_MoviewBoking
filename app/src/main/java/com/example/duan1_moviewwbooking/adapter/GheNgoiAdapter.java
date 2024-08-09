@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.duan1_moviewwbooking.R;
-import com.example.duan1_movietvbooking.model.GheNgoi;
+import com.example.duan1_moviewwbooking.model.GheNgoi;
 
 import java.util.ArrayList;
 

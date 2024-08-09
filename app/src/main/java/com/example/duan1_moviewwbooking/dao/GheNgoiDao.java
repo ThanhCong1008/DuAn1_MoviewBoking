@@ -6,8 +6,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.duan1_movieticketbooking.database.DbHelper;
-import com.example.duan1_movieticketbooking.model.GheNgoi;
+import com.example.duan1_moviewwbooking.database.DbHelper;
+import com.example.duan1_moviewwbooking.model.GheNgoi;
 
 import java.util.ArrayList;
 import java.util.List;

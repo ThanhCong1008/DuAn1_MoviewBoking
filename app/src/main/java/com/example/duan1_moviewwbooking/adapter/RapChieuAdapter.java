@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.duan1_moviewwbooking.R;
-import com.example.duan1_movieticketbooking.dao.XuatChieuDao;
-import com.example.duan1_movieticketbooking.model.RapChieu;
-import com.example.duan1_movieticketbooking.model.XuatChieu;
+import com.example.duan1_moviewwbooking.dao.XuatChieuDao;
+import com.example.duan1_moviewwbooking.model.RapChieu;
+import com.example.duan1_moviewwbooking.model.XuatChieu;
 
 import java.util.ArrayList;
 import java.util.List;

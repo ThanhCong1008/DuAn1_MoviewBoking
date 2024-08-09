@@ -28,6 +28,7 @@ public class DangNhapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_nhap);
 
+        edTenTaiKhoan = findViewById(R.id.ed_tentaikhoan_atv_dangnhap);
         edMatKhau = findViewById(R.id.ed_matkhau_atv_dangnhap);
         cbxGhiNhoPass = findViewById(R.id.cbx_ghinhopass);
         btnDangNhap = findViewById(R.id.btn_dangnhap);
